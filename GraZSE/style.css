@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column; /* Umożliwia ustawienie napisu na górze */
+}
+
+#game-over-text {
+    font-family: 'Cinzel', serif; /* Retro czcionka */
+    font-size: 4rem; /* Duży rozmiar tekstu */
+    color: #ff007f; /* Neonowy różowy kolor */
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 0 0 5px #ff007f,   /* Delikatny różowy cień */
+                 0 0 10px #ff007f, 
+                 0 0 15px #ff007f; /* Maksymalna jasność */
+    display: none; /* Domyślnie ukryty */
+}
+
+
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #ff0000,  /* czerwony */
+                 0 0 7px #00ff00, /* zielony */
+                 0 0 10px #0000ff, /* niebieski */
+                 0 0 13px #ffff00, /* żółty */
+                 0 0 17px #ff00ff, /* fioletowy */
+                 0 0 19px #00ffff; /* błękitny */
+    font-family: 'VT323', monospace; /* Zastosowanie nowej czcionki */
+}
+
+
+.container {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.9); /* Minimalne zmniejszenie kafelka */
+    opacity: 0.8; /* Dodanie subtelnego efektu przezroczystości */
+    transition: transform 0.1s ease; /* Płynna animacja zmniejszania */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Minimalne powiększenie */
+    transition: transform 0.2s ease; /* Płynna animacja powiększania */
+}
+
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: #0066ff;
+}
+
+.green {
+    background-color: #33cc00;
+}
+
+.yellow {
+    background-color: #ffcc00;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
+.game-over {
+    background-color: #990000;
+}
+
+.highlight {
+    border: 5px solid white; /* Biała obramówka */
+    box-shadow: 0 0 10px white; /* Subtelny efekt świetlny */
+    transition: border 0.1s ease, box-shadow 0.1s ease; /* Płynne włączanie i wyłączanie efektu */
+}
+
+/*Wykonał: Marcin Witnik */
